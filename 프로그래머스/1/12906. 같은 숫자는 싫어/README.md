@@ -2,6 +2,12 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12906) 
 
+----
+stack.peek()을 잘 활용하자!
+```public Element peek(); // 최근에 추가된(Top) 데이터 조회```
+
+----
+
 ### 성능 요약
 
 메모리: 110 MB, 시간: 43.18 ms
