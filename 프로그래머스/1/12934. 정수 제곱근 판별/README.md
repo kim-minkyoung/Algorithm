@@ -2,6 +2,16 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12934) 
 
+----
+pow(a, b): a의 b제곱
+
+```
+(long) Math.pow(Math.sqrt(n) + 1, 2)
+```
+
+____
+
+
 ### 성능 요약
 
 메모리: 75.1 MB, 시간: 0.08 ms
