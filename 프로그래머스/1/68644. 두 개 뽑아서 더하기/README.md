@@ -2,6 +2,13 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/68644) 
 
+----
+```Set<Integer> answer = new TreeSet<>();```
+
+자료형 TreeSet: 자동으로 오름차순 정렬 + 중복 제거
+
+----
+
 ### 성능 요약
 
 메모리: 82.4 MB, 시간: 3.18 ms
