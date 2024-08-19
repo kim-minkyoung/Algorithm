@@ -3,6 +3,28 @@
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/68644) 
 
 ----
+```
+import java.util.*;
+
+class Solution {
+    public Set<Integer> solution(int[] numbers) {
+        ArrayList<Integer> answer = new ArrayList<>();
+        for(int i=0; i<numbers.length; i++){
+            for(int j=i+1; j<numbers.length; j++){
+                answer.add(numbers[i]+numbers[j]);
+            }
+        }
+        answer.sort(Comparator.naturalOrder());
+        Set<Integer> ansSet = new HashSet<>(answer);
+        return ansSet;
+    }
+}
+```
+- ArrayList에서 중복된 값을 포함한 상태로 정렬한 후 HashSet으로 변환하면, HashSet은 정렬을 유지하지 않기 때문에 정렬이 무의미해집니다.
+
+- 결국, 반환된 Set은 중복이 제거되지만, 순서가 뒤섞여 있을 가능성이 큽니다.
+
+#### 해결법
 ```Set<Integer> answer = new TreeSet<>();```
 
 자료형 TreeSet: 자동으로 오름차순 정렬 + 중복 제거
