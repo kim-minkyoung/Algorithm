@@ -2,6 +2,11 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12954) 
 
+----
+int 범위 넘어가는지 확인 후 넘어가면 long으로 자료형 변경
+
+----
+
 ### 성능 요약
 
 메모리: 82.9 MB, 시간: 0.69 ms
