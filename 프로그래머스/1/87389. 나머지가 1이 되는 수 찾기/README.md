@@ -2,6 +2,11 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/87389) 
 
+----
+홀수일 땐 무조건 2
+
+----
+
 ### 성능 요약
 
 메모리: 76 MB, 시간: 5.44 ms
