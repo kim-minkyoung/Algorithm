@@ -2,6 +2,21 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12933) 
 
+----
+```
+public int reverseInt(int n){
+        res = "";
+        Integer
+                .toString(n)
+                .chars()
+                .sorted()
+                .forEach(c -> res = Character.valueOf((char)c) + res);
+        return Integer.parseInt(res);
+    }
+```
+
+----
+
 ### 성능 요약
 
 메모리: 82.6 MB, 시간: 0.28 ms
