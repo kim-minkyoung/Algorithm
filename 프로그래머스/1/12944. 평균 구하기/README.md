@@ -2,6 +2,15 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12944) 
 
+----
+
+```
+import java.util.Arrays;
+return (int) Arrays.stream(array).average().orElse(0);
+```
+
+----
+
 ### 성능 요약
 
 메모리: 73.9 MB, 시간: 0.05 ms
