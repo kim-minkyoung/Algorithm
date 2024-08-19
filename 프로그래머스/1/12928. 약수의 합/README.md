@@ -2,6 +2,12 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12928) 
 
+----
+```
+int sqrt = (int) Math.sqrt(n);
+```
+----
+
 ### 성능 요약
 
 메모리: 83.1 MB, 시간: 0.11 ms
