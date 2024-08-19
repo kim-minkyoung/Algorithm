@@ -2,6 +2,11 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12903) 
 
+----
+substring(a, b): a부터 b-1까지 추출
+
+----
+
 ### 성능 요약
 
 메모리: 73.2 MB, 시간: 0.03 ms
