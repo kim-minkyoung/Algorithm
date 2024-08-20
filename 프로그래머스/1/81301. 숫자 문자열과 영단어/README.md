@@ -2,6 +2,18 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/81301) 
 
+---
+하드 코딩 하지 말고
+```
+String[] strArr = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+        for(int i = 0; i < strArr.length; i++) {
+            s = s.replaceAll(strArr[i], Integer.toString(i));
+        }
+        return Integer.parseInt(s);
+```
+
+----
+
 ### 성능 요약
 
 메모리: 84.5 MB, 시간: 0.67 ms
