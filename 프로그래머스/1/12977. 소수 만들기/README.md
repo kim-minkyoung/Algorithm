@@ -2,6 +2,11 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12977) 
 
+----
+```isPrime()``` 이라는 매소드가 있는 줄 몰랐다 하핳
+
+----
+
 ### 성능 요약
 
 메모리: 83.5 MB, 시간: 16.46 ms
