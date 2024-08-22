@@ -2,6 +2,71 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/161989) 
 
+----
+## 굳이 시각화하려 하지 말자
+
+### 나의 바보 같은 접근
+
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int n, int m, int[] section) {
+        int answer = 0;
+        ArrayList<Integer> wall = new ArrayList<>();
+        for(int i=0; i<n; i++) wall.add(1);
+        for (Integer i: section) wall.set(i-1, 0);
+        System.out.println(wall);
+        
+        for(int i=0; i<n; i++){
+            if(wall.get(i)==0){
+                if(i<n-m+1){
+                    for(int j=i; j<i+m; j++){
+                        if(wall.get(j)==0) {
+                            wall.set(j, 1);
+                        }
+                    }
+                }
+                else{
+                    for(int j=i; j>i-m; j--){
+                        if(wall.get(j)==0) {
+                            wall.set(j, 1);
+                        }
+                    }
+                }
+                System.out.println(j);
+                answer++;
+            }
+        }
+        System.out.println(wall);
+        return answer;
+    }
+}
+```
+
+### 정답 코드
+```
+import java.util.*;
+
+class Solution {
+    public int solution(int n, int m, int[] section) {
+        int answer = 0;
+        int lastPainted = 0;  // 마지막으로 페인트를 칠한 위치를 기록합니다.
+        
+        for (int i = 0; i < section.length; i++) {
+            if (section[i] > lastPainted) {
+                answer++;  // 새로운 페인트칠 필요
+                lastPainted = section[i] + m - 1;  // 롤러의 길이만큼 앞으로 칠합니다.
+            }
+        }
+        
+        return answer;
+    }
+}
+```
+
+----
+
 ### 성능 요약
 
 메모리: 84.7 MB, 시간: 2.46 ms
