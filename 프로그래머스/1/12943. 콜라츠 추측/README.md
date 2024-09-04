@@ -2,6 +2,11 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12943) 
 
+----
+`3 * num + 1`을 함에 따라 숫자가 급격히 커지는 경우도 있기 때문에 long으로 받아와야 함
+
+----
+
 ### 성능 요약
 
 메모리: 76.3 MB, 시간: 0.07 ms
